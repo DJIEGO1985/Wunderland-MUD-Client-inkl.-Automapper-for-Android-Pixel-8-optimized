@@ -1,26 +1,8 @@
-Ich lade das Repository-Overview-Fähigkeit, um dir eine detaillierte Analyse zu erstellen.
-
-Now let me analyze your repository systematically:
-
-Perfekt! Jetzt habe ich einen detaillierten Überblick über deine App. Hier ist eine umfassende Analyse:
-WUNDERLAND MUD CLIENT - Detaillierte Funktionen & Features
-Was ist diese App?
-
 Ein nativer Android-Client für das deutsche MUD-Spiel "Wunderland" (wl.mud.de:4711). Die App bietet eine professionelle Telnet-Verbindung mit intelligenter Kartenerstellung, Automatisierung und umfangreichen Anpassungsmöglichkeiten.
-🏗️ Technische Architektur
-
-Stack:
-
-    Sprache: Kotlin (81,9%), Java (12,2%), Kotlin (4,1%), HTML, PowerShell, JavaScript
-    UI-Framework: Jetpack Compose (deklarativ & modern)
-    Architektur: MVVM (Model-View-ViewModel)
-    Dependency Injection: Dagger Hilt
-    Datenbank: Room Persistence Library (SQLite, v26)
-    Netzwerk: Telnet (TCP) mit ISO-8859-1 Encoding
-    Sicherheit: AES-GCM Verschlüsselung via Android Keystore
 
 🎮 HAUPTFUNKTIONEN
-1. TELNET-VERBINDUNG & LOGIN
+
+TELNET-VERBINDUNG & LOGIN
 
     ✅ Direkte Verbindung zu wl.mud.de:4711
     ✅ Multi-Character Support (mehrere Charaktere speichern)
@@ -28,7 +10,7 @@ Stack:
     ✅ Automatische Verbindungsverwaltung
     ✅ Immersive Fullscreen-Modus (Status/Nav-Leisten nur per Swipe sichtbar)
 
-2. AUTOMAPPER & MAP-MANAGEMENT
+AUTOMAPPER & MAP-MANAGEMENT
 
 Automatische Kartenerstellung:
 
@@ -66,7 +48,7 @@ Minimap (Floating Overlay):
     ✅ Größe anpassbar via Pinch-to-Zoom
     ✅ Farb-Markierungen wie oben
 
-3. BENUTZERINTERFACE
+BENUTZERINTERFACE
 
 DPAD (Steuerkreuz):
 
@@ -94,7 +76,7 @@ Header-Icons & Funktionen:
     ⚙️ Zahnrad: Einstellungsmenü
     📱 / 🗺️ Terminal/Map: Ansicht wechseln
 
-4. FLOATING WINDOWS
+FLOATING WINDOWS
 
 Notizbuch (Notepad):
 
@@ -119,7 +101,7 @@ Status-Bar:
     ✅ MP (Magiepunkte) & Max-MP
     ✅ Leiden-Status (Vergiftung, Flucht, etc.)
 
-5. AUTOMATISIERUNG & BEFEHLE
+AUTOMATISIERUNG & BEFEHLE
 
 Makros (3 scrollbare Reihen):
 
@@ -151,7 +133,7 @@ Buffs/Effekt-Tracking:
     ✅ Icon & Farb-Anpassung
     ✅ Dauer-Tracking
 
-6. CHAT-SYSTEM (MUD-Ebenen)
+CHAT-SYSTEM (MUD-Ebenen)
 
 Ebenen-Integration (34 Kanäle):
 
@@ -167,24 +149,8 @@ Chat-Befehle:
     ✅ -<ebene>*<zahl> - Nachrichten wiederholen
     ✅ -# ali - Ebenen-Aliase verwalten
 
-7. DATENBANK & PERSISTENZ
 
-Gespeicherte Entitäten:
-
-    MapData - Karten-Informationen
-    MudRoom - Raum-Details (Koordinaten, Exits, Notizen)
-    MapLink - Verbindungen zwischen Räumen
-    AliasEntity - Kürzel-Definitionen
-    TriggerEntity - Auto-Reaktions-Pattern
-    MacroEntity - Makro-Befehle (3 Reihen)
-    NoteEntity - Notizbuch-Inhalte
-    QuickButtonEntity - B1 & B2 Button-Konfiguration
-    TimerEntity - Timer mit Befehlen
-    CharacterEntity - Charakter-Daten
-    BuffEntity - Buff/Effekt-Definitionen
-
-Migrationen: 6 Database-Migrationen (v19-v26)
-8. TEXT-PARSING & ANSI-VERARBEITUNG
+TEXT-PARSING & ANSI-VERARBEITUNG
 
 MudTextParser (Regex-basiert):
 
@@ -196,14 +162,14 @@ MudTextParser (Regex-basiert):
     ✅ Bewegungs-Fehler detektieren
     ✅ Chunk-Puffer (bis 4000 Zeichen) für sichere Verarbeitung
 
-9. SICHERHEIT
+SICHERHEIT
 
     ✅ Passwörter NIEMALS im Klartext gespeichert
     ✅ AES-GCM Verschlüsselung via Hardware Keystore
     ✅ Passwort-Input maskiert (•••••)
     ✅ Sichere Telnet-Verbindung (ISO-8859-1)
 
-10. ZUSÄTZLICHE FEATURES
+ZUSÄTZLICHE FEATURES
 
     ✅ Multi-Charakter Support: Verschiedene Charaktere speichern & wechseln
     ✅ Schriftgröße anpassbar: +/- Buttons im Header
