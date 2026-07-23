@@ -22,6 +22,9 @@ Der Automapper ist das Herzstück der Navigation. Er bietet verschiedene Interak
 *   **Labyrinth-Modus umschalten:** Aktiviere den Labyrinth-Modus über das entsprechende Icon in der Toolbar, wenn du dich in Gebieten mit identischen Raumbeschreibungen befindest. In diesem Modus erzeugt jeder Schritt einen neuen, eindeutigen Raum, um die Orientierung zu wahren.
 *   **Raum-Bearbeiten (Long Press):** Tippe lange auf einen Raum, um technische Details einzusehen. In diesem Menü wird unter "Notizen" die vom Parser erkannte Raumbeschreibung gespeichert.
 *   **Autopilot:** Tippe kurz auf einen beliebigen bekannten Raum, um die automatische Wegfindung (Pathfinder) zu starten. Der Client führt dich dann Schritt für Schritt dorthin.
+*   **Verschieben & Verschmelzen (Drag & Drop):** Du kannst Räume manuell auf der Karte neu anordnen.
+    *   *Verschieben:* Halte einen Raum kurz gedrückt (bis er sich vom Gitter löst) und ziehe ihn an eine neue Position.
+    *   *Verschmelzen:* Ziehe einen Raum direkt auf einen anderen Raum. Der Client fragt dich dann, ob du die beiden Räume (inklusive ihrer Verbindungen und Daten) zu einem einzigen Raum verschmelzen möchtest. Dies ist besonders hilfreich, um Mapping-Fehler oder doppelte Räume zu korrigieren.
 
 #### Legende der Karten-Symbole
 
@@ -40,7 +43,12 @@ Der Automapper ist das Herzstück der Navigation. Er bietet verschiedene Interak
 | **Pulsierads Path** | Die aktive Route des Autopiloten. |
 
 ### 2. Floating Menu (Werkzeugleiste)
-Das Floating Menu ist dein zentraler Zugriffspunkt für Schnelleinstellungen und Werkzeuge. Es kann frei auf dem Bildschirm verschoben werden (Drag & Drop) und klappt bei einem einfachen Tippen auf den blau-lila umrandeten Hauptbutton aus.
+Das Floating Menu ist dein zentraler Zugriffspunkt für Schnelleinstellungen und Werkzeuge. Es kann frei auf dem Bildschirm verschoben werden (Drag & Drop am blau-lila umrandeten Hauptbutton) und klappt bei einem einfachen Tippen aus.
+
+#### Bedienung & Optik
+*   **Hauptbutton:** Der Button mit dem blau-lila Rand ist der Anker. Ziehe ihn an eine beliebige Stelle, um das Menü zu positionieren.
+*   **Zustandsanzeige:** Icons im Menü mit einem **roten Rand** signalisieren, dass die entsprechende Funktion aktuell **deaktiviert** ist (z.B. Trigger-Master oder Klickbarer Text).
+*   **Kontextmenüs (Long Press):** Viele Icons bieten bei langem Drücken zusätzliche Einstellungen (z.B. Trigger-Auswahl oder Poller-Intervall).
 
 #### Funktionen im Floating Menu:
 
